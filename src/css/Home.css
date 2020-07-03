@@ -1,77 +1,71 @@
-.image {
-    width: 100%;
+@font-face {
+    src: url('../fonts/ARCADE_N.TTF');
+    font-family: pixel ;
 }
 
-.dots {
-    text-align: center;
+@font-face {
+    src: url('../fonts/ARCADE_I.TTF');
+    font-family: pixel2;
 }
 
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
+body {
+    background-image: url('../Photos/Animated\ GIF-downsized_large.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bigText {
+    font-family: pixel2;
+    font-size: xx-large;
     margin: auto;
+    margin-top: 2%;
+    margin-bottom: 5px;
+    color: gold;
+    border: black;
 }
+#welcome {
+    font-family: pixel;
+    transition: 2s;
+    color: red;
+    text-shadow: black;
+}
+
+
+#welcome:hover {
+    color: gold;
+}
+
+#welcomeMessageContainer {
+    border-style: dashed;
+    width: 80%;
+    margin: auto;
+    position: inherit;
+    background-color: whitesmoke;
+}
+
+.image {
+    width: 410px;
+    height: 410px;
+    margin: auto;
+    border-radius: 10px;
+    transition: 2s;
+    border-style: solid;
+    border-width: thick;
+    border-color: white;
+}
+
+.image:hover {
+    box-shadow: 2px 2px 2px #6d0000;
+}
+
+
+
 
 /* .mySlides {
     display: none;
 } */
 
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
 
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-    background-color: #717171;
-}
 
 .fade {
     -webkit-animation-name: fade;
