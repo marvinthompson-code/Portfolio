@@ -6,6 +6,8 @@ import Nav from '../src/components/Nav'
 import Home from '../src/components/Home/Home'
 import Project from '../src/components/Projects/Project'
 import About from '../src/components/About/About'
+import Footer from './components/Footer';
+import Contact from './components/Contact/Contact'
 
 function App() {
   return (
@@ -25,8 +27,12 @@ function App() {
           <Project/>
         </Route>
 
-      </Switch>
+        <Route path={"/contact"}>
+          <Contact />
+        </Route>
 
+      </Switch>
+      <Footer/>
     </div>
   );
 }

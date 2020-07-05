@@ -1,0 +1,58 @@
+@font-face {
+    src: url('../fonts/ARCADE_N.TTF');
+    font-family: pixel ;
+}
+
+@font-face {
+    src: url('../fonts/ARCADE_I.TTF');
+    font-family: pixel2;
+}
+
+.question {
+    font-family: pixel2;
+    font-size: x-large;
+    color: gold;
+    border: black;
+}
+
+.info {
+    font-family: pixel;
+    font-size: x-small;
+    color: white;
+}
+
+.questionContainer {
+    margin: auto;
+    background: rgb(34,128,195);
+    background: radial-gradient(circle, rgba(34,128,195,1) 0%, rgba(0,16,149,1) 100%);
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.bigContainer {
+    width: 420px;
+    margin: auto;
+    margin-top: 20px;
+    overflow: scroll;
+    height: 650px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}

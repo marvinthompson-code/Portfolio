@@ -1,0 +1,25 @@
+@font-face {
+    src: url('../fonts/ARCADE_N.TTF');
+    font-family: pixel ;
+}
+
+@font-face {
+    src: url('../fonts/ARCADE_I.TTF');
+    font-family: pixel2;
+}
+
+.footer {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    font-family: pixel;
+    justify-content: space-evenly;
+    bottom: 0;
+    width: 100%;
+    height: 3.5 rem; 
+}
+
+.git {
+    color: red;
+}

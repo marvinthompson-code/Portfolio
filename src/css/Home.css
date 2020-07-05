@@ -9,9 +9,12 @@
 }
 
 body {
-    background-image: url('../Photos/Animated\ GIF-downsized_large.gif');
+    /* background-image: url('../Photos/Animated\ GIF-downsized_large.gif');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    min-height: 100vh;
+    background: rgb(34,128,195);
+    background: radial-gradient(circle, rgba(34,128,195,1) 0%, rgba(0,16,149,1) 100%);
 }
 
 #bigText {
@@ -55,7 +58,7 @@ body {
 }
 
 .image:hover {
-    box-shadow: 2px 2px 2px #6d0000;
+    box-shadow: 4px 2px 2px #6d0000;
 }
 
 
