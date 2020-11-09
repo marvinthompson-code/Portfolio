@@ -1,0 +1,23 @@
+
+@font-face {
+    src: url('../fonts/Raleway-Light.ttf');
+    font-family: railwayLight;
+}
+
+@font-face {
+    src: url('../fonts/Raleway-LightItalic.ttf');
+    font-family: railwayItalic;
+}
+
+@font-face {
+    src: url('../fonts/Raleway-Medium.ttf');
+    font-family: railwayMedium;
+}
+
+.contactForm {
+    margin: 50px;
+}
+
+.contactInput {
+    padding-bottom: 10px;
+}

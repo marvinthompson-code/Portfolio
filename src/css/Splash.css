@@ -1,0 +1,102 @@
+:root {
+    --eerieBlk: #101515;
+    --richBlk: #060808;
+    --eerieBlk2: #1c1e1e;
+    --eerieBlk3: #212222;
+    --spaceGrey: #5a7272;
+}
+
+
+@font-face {
+    src: url("../fonts/LibreBaskerville-Regular.ttf");
+    font-family: LibreRegular;
+}
+
+@font-face {
+    src: url("../fonts/GrenzeGotisch-VariableFont_wght.ttf");
+    font-family: GrenzeGotisch;
+  }
+
+@font-face {
+    src: url('../fonts/Raleway-Light.ttf');
+    font-family: railwayLight;
+}
+
+@font-face {
+    src: url('../fonts/Raleway-LightItalic.ttf');
+    font-family: railwayItalic;
+}
+
+@font-face {
+    src: url('../fonts/Raleway-Medium.ttf');
+    font-family: railwayMedium;
+}
+
+.name {
+    font-family: railwayMedium;
+    font-size: xxx-large;
+    color: whitesmoke;
+}
+
+.title {
+    font-family: railwayLight;
+    font-size: x-large;
+    color: whitesmoke
+}
+
+.enter {
+    background-color: unset;
+    border-color: white !important;
+    transition: 1s;
+    margin: 5px;
+    font-family: GrenzeGotisch;
+}
+
+.enter:hover {
+    background-color: white !important;
+    border-color: white !important;
+    color: var(--richBlk) !important;
+}
+.enter:hover {
+    color: white;
+
+}
+
+.splash {
+    text-align: center;
+    /* margin-top: 15%; */
+}
+
+html {
+    height:100vh;
+    min-height:100vh;
+}
+
+.splashJumbo {
+    border-radius: 10px;
+    background-color: unset;
+    width: 100%;
+    height: auto;
+}
+
+.spashTextTitle {
+    font-family: GrenzeGotisch;
+    color: white !important;
+    text-shadow: 2px 2px 8px var(--eerieBlk);
+}
+
+.splashText {
+    color: white !important;
+    font-family: LibreRegular;
+    text-shadow: 2px 2px 8px var(--eerieBlk);
+}
+
+.icon {
+    height: 25px;
+    filter: invert(1);
+    transition: 1s;
+}
+
+.icon:hover {
+    filter: invert(0);
+}

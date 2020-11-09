@@ -1,22 +1,59 @@
+:root {
+  --eerieBlk: #101515;
+  --richBlk: #060808;
+
+  --eerieBlk2: #1c1e1e;
+  --eerieBlk3: #212222;
+  --spaceGrey: #5a7272;
+}
+
 @font-face {
-    src: url('../fonts/ARCADE_N.TTF');
-    font-family: pixel;
+  src: url("../fonts/ARCADE_N.TTF");
+  font-family: pixel;
+}
+@font-face {
+  src: url("../fonts/Raleway-Light.ttf");
+  font-family: railwayLight;
 }
 
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-    font-family: pixel;
-    transition: 2s;
-    width: 100%;
+@font-face {
+  src: url("../fonts/Raleway-LightItalic.ttf");
+  font-family: railwayItalic;
+}
+
+@font-face {
+  src: url("../fonts/Raleway-Medium.ttf");
+  font-family: railwayMedium;
+}
+
+
+@font-face {
+  src: url("../fonts/GrenzeGotisch-VariableFont_wght.ttf");
+  font-family: GrenzeGotisch;
+}
+
+.navItem {
+  color: white !important;
+  font-family: GrenzeGotisch;
+  font-size: large;
+}
+
+.brand {
+    color: white !important;
+    font-family: GrenzeGotisch;
     font-size: x-large;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-style: solid;
-    color: black;
-    background-color: black;
 }
 
-.navItem:hover {
-    color: white;
-}
+
+.nav-item {
+    padding: 5px 10px;
+    margin: 2px 3px;
+  }
+
+  .navBar {
+    background-color: var(--richBlk) !important;
+  }
+
+  .hamburgerButton:hover {
+    background-color: white !important;
+  }

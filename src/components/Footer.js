@@ -5,10 +5,11 @@ import '../css/Footer.css'
 const Footer = () => {
 
     return (
-        <ul className={"footer"}>
+        <footer className={"footer"}>
             <NavLink exact to={"/contact"}>Contact</NavLink>
             <a href={"https://github.com/marvinthompson-code"} className={"git"}>github</a>
-        </ul>
+            <a href={"https://www.linkedin.com/in/marvinjthompson/"} className={"linkedIn"}>linkedIn</a>
+        </footer>
     )
 }
 

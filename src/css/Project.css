@@ -1,0 +1,98 @@
+:root {
+  --eerieBlk: #101515;
+  --richBlk: #060808;
+  --eerieBlk2: #1c1e1e;
+  --eerieBlk3: #212222;
+  --spaceGrey: #5a7272;
+}
+@font-face {
+  src: url("../fonts/ARCADE_N.TTF");
+  font-family: pixel;
+}
+
+@font-face {
+  src: url("../fonts/LibreBaskerville-Regular.ttf");
+  font-family: LibreRegular;
+}
+
+@font-face {
+  src: url("../fonts/ARCADE_I.TTF");
+  font-family: pixel2;
+}
+
+@font-face {
+  src: url("../fonts/Raleway-Light.ttf");
+  font-family: railwayLight;
+}
+
+@font-face {
+  src: url("../fonts/Raleway-LightItalic.ttf");
+  font-family: railwayItalic;
+}
+
+@font-face {
+  src: url("../fonts/Raleway-Medium.ttf");
+  font-family: railwayMedium;
+}
+
+@font-face {
+  src: url("../fonts/GrenzeGotisch-VariableFont_wght.ttf");
+  font-family: GrenzeGotisch;
+}
+
+@font-face {
+  src: url("../fonts/Raleway-Light.ttf");
+  font-family: railwayLight;
+}
+
+@font-face {
+  src: url("../fonts/Raleway-LightItalic.ttf");
+  font-family: railwayItalic;
+}
+
+@font-face {
+  src: url("../fonts/Raleway-Medium.ttf");
+  font-family: railwayMedium;
+}
+
+.cardImage {
+  width: 100%; /* You can set the dimensions to whatever you want */
+  height: 300px;
+  object-fit: cover;
+}
+
+.innerJumbo {
+  background-color: unset;
+  border-radius: 10px;
+}
+
+.bigJumbo {
+  margin-top: 15px;
+  background: rgb(6, 8, 8);
+  background: linear-gradient(
+    360deg,
+    rgba(6, 8, 8, 0.8449754901960784) 27%,
+    rgba(29, 30, 30, 0.7525385154061625) 43%,
+    rgba(110, 110, 110, 0) 100%
+  );
+  border-radius: 10px;
+  transition: 2s;
+}
+
+.bigJumbo:hover {
+  background-color: var(--richBlk);
+}
+
+.cardBody {
+  background-color: var(--eerieBlk3) !important;
+}
+
+.slideCard {
+  border: 5px solid var(--richBlk);
+  border-radius: 10px;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+}
