@@ -38,8 +38,10 @@ const About = () => {
                 hailing from John Jay College, Graduating with a Bachelors of
                 Science in Criminal Justice.
               </p>
-
-              <p
+            </div>
+            <br></br>
+            <div className={"container bottomText"}>
+            <p
                 className={"info text-left"}
                 style={{
                   fontSize: "3vh",
@@ -85,8 +87,18 @@ const About = () => {
                 called Pursuit, invited me to come to one of their welcoming
                 seminars.
               </p>
-
-              <p
+            </div>
+            <div className="col-sm-6">
+              <img
+                src={Purple}
+                className="img-fluid jumboImage"
+                alt="Responsive image"
+              />
+            </div>
+          </div>
+          <br></br>
+          <div className={"container bottomText"}>
+          <p
                 className={"info text-left"}
                 style={{
                   fontSize: "3vh",
@@ -101,14 +113,6 @@ const About = () => {
                 here. Before long, I fell in love with coding, and I want to do
                 this for the rest of my life.
               </p>
-            </div>
-            <div className="col-sm-6">
-              <img
-                src={Purple}
-                className="img-fluid jumboImage"
-                alt="Responsive image"
-              />
-            </div>
           </div>
         </div>
 
@@ -139,8 +143,11 @@ const About = () => {
                 something and then using that information to create something of
                 my own is unmatched.
               </p>
-
-              <p
+            </div>
+          </div>
+          <br></br>
+          <div className={"container bottomText"}>
+          <p
                 className={"info text-left"}
                 style={{
                   fontSize: "3vh",
@@ -161,15 +168,14 @@ const About = () => {
                 I want to push myself and help create products that can help
                 others out, and learn more about myself in the process.
               </p>
-              <button
+          </div>
+          <button
                 type="button"
                 className="btn btn-primary projectsButton"
                 onClick={() => history.push("/projects")}
               >
                 Projects
               </button>
-            </div>
-          </div>
         </div>
       </div>
     </div>

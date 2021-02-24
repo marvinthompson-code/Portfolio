@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "../../css/Project.css";
-import noThanks from "../../Photos/nothanksthumb.jpg";
+import noThanks from "../../Photos/ntcscreenshot.png";
 import faceSpace from "../../Photos/facespacethumb2.jpg";
 import { useHistory } from "react-router-dom";
 import roadie from "../../Photos/Screen Shot 2020-09-19 at 2.48.37 PM.png";
@@ -38,7 +38,7 @@ const Project = () => {
         <div className="card-deck  justify-content-md-center ">
           <div
             className="card text-center slideCard"
-            style={{ width: "18rem" }}
+            // style={{ width: "18rem" }}
           >
             <img
               className="card-img-top d-block img-fluid img-responsive cardImage"
@@ -46,9 +46,9 @@ const Project = () => {
               alt="Card image cap"
             />
             <div className="card-body cardBody">
-              <h5 className="card-title jumboTextTitle">Roadie</h5>
+              <h5 className="card-title jumboTextTitle projectTitle">Roadie</h5>
               <p
-                className="card-text jumboText text-left"
+                className="card-text jumboText projectText text-left"
                 style={{
                   fontSize: "3vh",
                 }}
@@ -75,7 +75,7 @@ const Project = () => {
 
           <div
             className="card text-center slideCard"
-            style={{ width: "18rem" }}
+            // style={{ width: "18rem" }}
           >
             <img
               className="card-img-top d-block img-fluid img-responsive cardImage"
@@ -83,9 +83,9 @@ const Project = () => {
               alt="Card image cap"
             />
             <div className="card-body cardBody">
-              <h5 className="card-title jumboTextTitle">FaceSpace</h5>
+              <h5 className="card-title jumboTextTitle projectTitle">FaceSpace</h5>
               <p
-                className="card-text jumboText text-left"
+                className="card-text jumboText projectText text-left"
                 style={{
                   fontSize: "3vh",
                 }}
@@ -112,7 +112,7 @@ const Project = () => {
 
           <div
             className="card text-center slideCard"
-            style={{ width: "18rem" }}
+            // style={{ width: "18rem" }}
           >
             <img
               className="card-img-top d-block img-fluid img-responsive cardImage"
@@ -120,26 +120,25 @@ const Project = () => {
               alt="Card image cap"
             />
             <div className="card-body cardBody">
-              <h5 className="card-title jumboTextTitle">No Thanks!</h5>
+              <h5 className="card-title jumboTextTitle projectTitle">#NowThatsCap</h5>
               <p
-                className="card-text jumboText text-left"
+                className="card-text jumboText projectText text-left"
                 style={{
                   fontSize: "3vh",
                 }}
               >
-                "No-Thanks!" shows you the worst rated food restaurants in your
-                area. This was built during my first Hackathon while at Pursuit.
+                "#NowThatsCap" is an educational Black-History Card Game, currently in Beta. Test your cultural knowledge against the clock!
               </p>
               <a
                 target="__blank"
-                href="https://no-thanks.netlify.app/"
+                href="https://nowthatscap.netlify.app/"
                 className="btn enter btn-primary"
               >
                 Live Site
               </a>
               <a
                 target="__blank"
-                href="https://github.com/marvinthompson-code/No-thanks"
+                href="https://github.com/marvinthompson-code/now-thats-cap"
                 className="btn enter btn-primary"
               >
                 Github

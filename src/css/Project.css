@@ -59,6 +59,8 @@
   width: 100%; /* You can set the dimensions to whatever you want */
   height: 300px;
   object-fit: cover;
+  padding: 1px;
+  background: black;
 }
 
 .innerJumbo {
@@ -95,4 +97,13 @@
 .card {
   width: 100%;
   height: auto;
+}
+
+
+.projectTitle {
+  font-size: 1.5rem;
+}
+
+.projectText {
+  font-size: 2vh !important;
 }
