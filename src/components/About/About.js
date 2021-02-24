@@ -7,7 +7,7 @@ import Berkshire from "../../Photos/Berkshire.jpg";
 
 const About = () => {
   useEffect(() => {
-    window.scroll(0, 0);
+    window.scrollTo(0, 0);
   }, []);
   const history = useHistory();
   return (

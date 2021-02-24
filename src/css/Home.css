@@ -191,52 +191,20 @@ html {
 .skill7:hover {
   transform: scale(1.04, 1.04);
 }
+.skillImageContainer {
+  max-width: 150px;
+  max-height: 150px;
+  margin: auto;
+  padding: 10px;
+}
 
-.skill1 {
-  height: 160px;
-  width: 160px;
-  transition: 2s;
-  padding: 5px;
-}
-.skill2 {
-  height: 160px;
-  width: 210px;
-  transition: 2s;
-  padding: 5px;
-}
-.skill3 {
-  height: 160px;
-  width: 170px;
-  transition: 2s;
-  padding: 5px;
-}
-.skill4 {
-  height: 170px;
-  width: 170px;
-  transition: 2s;
-  padding: 5px;
-}
-.skill5 {
-  height: 140px;
-  width: 210px;
-  transition: 2s;
-
-  padding: 5px;
-}
-.skill6 {
-  height: 140px;
-  width: 210px;
+.skill {
+  height: auto;
+  width: 100%;
   transition: 2s;
   padding: 5px;
 }
 
-.skill7 {
-  height: 140px;
-  width: 210px;
-  transition: 2s;
-  filter: invert(1);
-  padding: 5px;
-}
 
 .bigDiv {
   display: flex;

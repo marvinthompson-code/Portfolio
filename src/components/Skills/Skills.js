@@ -1,14 +1,14 @@
 import React from "react";
-import FadeIn from "react-fade-in";
-import { usHistory, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import ReactLogo from "../../Photos/React.png";
 import NodeLogo from "../../Photos/Node.png";
 import ReduxLogo from "../../Photos/Redux.png";
 import PostGresLogo from "../../Photos/postgresql.png";
 import GitLogo from "../../Photos/Git-Logo-White.png";
 import HCJ from "../../Photos/HtmlCssJs.png";
-import Contact from "../Contact/Contact";
 import expressJs from "../../Photos/expressJsLogo.png"
+import django from "../../Photos/django-logo-negative.png"
+import firebaseLogo from "../../Photos/firebaselogo.png"
 
 const Skills = () => {
   const history = useHistory();
@@ -24,23 +24,72 @@ const Skills = () => {
             </p>
             <div className={"row"}>
               <div className="col">
-                <img src={ReactLogo} alt={"react"} className={"skill1"} />
+                <div className="skillContainer container">
+                  <div className="skillImageContainer">
+                <img src={ReactLogo} alt={"react"} className={"skill"} />
+                  </div>
+                <p className="skillDescription">Reactjs</p>
+                </div>
 
-                <img src={NodeLogo} alt={"node"} className={"skill2"} />
 
-                <img src={ReduxLogo} alt={"redux"} className={"skill3"} />
+
+                <div div className="skillContainer container">
+                <div className="skillImageContainer">
+                <img src={NodeLogo} alt={"node"} className={"skill"} />
+                </div>
+                <p className="skillDescription">Nodejs</p>
+                </div>
+
+                <div div className="skillContainer container">
+                <div className="skillImageContainer">
+                <img src={ReduxLogo} alt={"redux"} className={"skill"} />
+                </div>
+                <p className="skillDescription">Reduxjs/Redux Toolkit</p>
+                </div>
+
+                <div div className="skillContainer container">
+                <div className="skillImageContainer">
+                <img src={django} alt={"django"} className={"skill"} />
+                </div>
+                <p className="skillDescription">Django</p>
+                </div>
+
+                <div div className="skillContainer container">
+                <div className="skillImageContainer">
+                  <img src={firebaseLogo}  className={"skill"}/>
+                  </div>
+                  <p className="skillDescription">Firebase</p>
+                </div>
               </div>
               <div className="col">
+              <div div className="skillContainer container">
+              <div className="skillImageContainer">
                 <img
                   src={PostGresLogo}
                   alt={"PostGresql"}
-                  className={"skill4"}
-                />
-
-                <img src={GitLogo} alt={"Github"} className={"skill5"} />
-
-                <img src={HCJ} alt={"hcj"} className={"skill6"} />
-                <img src={expressJs} alt={"express logo"} className={"skill7"} />
+                  className={"skill"}
+                  />
+                  </div>
+                  <p className="skillDescription">Postgresql</p>
+                  </div>
+                  <div div className="skillContainer container">
+                  <div className="skillImageContainer">
+                <img src={GitLogo} alt={"Github"} className={"skill"} />
+                </div>
+                <p className="skillDescription">Github</p>
+                  </div>
+                  <div div className="skillContainer container">
+                  <div className="skillImageContainer">
+                <img src={HCJ} alt={"hcj"} className={"skill"} />
+                </div>
+                <p className="skillDescription">Javascript/HTML/CSS</p>
+                  </div>
+                  <div div className="skillContainer container">
+                  <div className="skillImageContainer">
+                <img src={expressJs} alt={"express logo"} className={"skill"} />
+                </div>
+                <p className="skillDescription">Expressjs</p>
+                  </div>
               </div>
             </div>
           </div>

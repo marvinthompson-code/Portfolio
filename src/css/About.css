@@ -73,6 +73,11 @@
   }
 }
 
+.skillDescription {
+  color: white !important;
+    text-shadow: 2px 2px 8px var(--eerieBlk2);
+    font-family: libreRegular;
+}
 
 @media screen and (max-width: 800px) {
   .info {
