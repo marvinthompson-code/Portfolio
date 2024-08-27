@@ -1,68 +1,34 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Summary
 
-In the project directory, you can run:
+This is the repo for my personal portfolio site.
 
-### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Site Walkthrough
+![giphy](https://github.com/user-attachments/assets/805c7d65-4b6b-4d91-9302-8d72cc1ac2ed)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+The site includes a number of pages:
 
-### `npm test`
+### Landing page
+A simple landing page with an icon to enter the site.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![landingpage](https://github.com/user-attachments/assets/d03db779-ffd2-43f1-9c6b-bb99b96a15c3) 
 
-### `npm run build`
+### Home Page
+View a summary and access the contact form.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Projects
+View current projects I've worked on, with links to both github and deployed versions.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Skills
+A list of technologies I've worked with.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Contact
+Hosts a contact form, using the MailJS API.
 
-### `npm run eject`
+## Future Iterations
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This site will be periodically updated!
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
