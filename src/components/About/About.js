@@ -1,184 +1,140 @@
 import React, { useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Purple from "../../Photos/PurpleAlexis.jpg";
 import lastLive from "../../Photos/84399706_3248712785158171_314242703846014976_n.jpg";
 import "../../css/About.css";
 import Berkshire from "../../Photos/Berkshire.jpg";
+import bwMarvin from "../../Photos/bwmarvin.jpg"
+import perch from "../../Photos/perch.jpg"
 
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const history = useHistory();
+  const navigate = useNavigate();
   return (
-    <div className={"about"}>
-      <div className={"bigContainer container"}>
-        <div
-          className={"questionContainer jumbotron jumbotron-fluid text-center"}
-        >
-          <h2 className={"question jumboTextTitle "}>Who am I?</h2>
-          <br></br>
-          <div className="row">
-            <div className="col-sm-6">
-              <img
-                src={lastLive}
-                className="img-fluid jumboImage"
-                alt="Responsive image"
-              />
+    <>
+      <div className={"about"}>
+        <div className={"bigContainer container"}>
+          <div
+            className={
+              "questionContainer jumbotron jumbotron-fluid text-center"
+            }
+          >
+            <h2 className={"question jumboTextTitle "}>Who am I?</h2>
+            <br></br>
+            <div className="row">
+              <div className="col-sm-6">
+                <img
+                  src={lastLive}
+                  className="img-fluid jumboImage"
+                  alt="Responsive image"
+                />
+              </div>
+              <div className="col-sm-6 jumboInfo">
+                <p
+                  className={"info text-left"}
+                  style={{
+                    fontSize: "25px",
+                  }}
+                >
+                  Hey! My name is Marvin Thompson, and I'm a Software engineer
+                  from New York City. I'm a musician, playing guitar and
+                  producing for many projects over the years. I'm also an avid
+                  fighting game fan, so if you're a fan, I'm always down to play
+                  some Street Fighter!
+                </p>
+              </div>
+              <br></br>
+              <br></br>
             </div>
-            <div className="col-sm-6 jumboInfo">
-              <p
-                className={"info text-left"}
-                style={{
-                  fontSize: "3vh",
-                }}
-              >
-                Hey! My name is Marvin Thompson, and I'm a Musician-turned-Full
-                Stack Developer from Queens, New York. I'm a college alum
-                hailing from John Jay College, Graduating with a Bachelors of
-                Science in Criminal Justice.
-              </p>
+          </div>
+
+          <div
+            className={
+              "questionContainer jumbotron jumbotron-fluid text-center"
+            }
+          >
+            <h2 className={"question jumboTextTitle"}>How did I get here?</h2>
+            <br></br>
+            <div className="row">
+              <div className="col-sm-6 jumboInfo">
+                <p
+                  className={"info text-left"}
+                  style={{
+                    fontSize: "25px",
+                  }}
+                >
+                  I transitioned into tech after graduating John Jay College
+                  with a B.S.E in Criminal Justice. However, I wanted to explore
+                  a field that allowed me to be more creative, and work in a
+                  more integrated team setting. My partner was beginning her
+                  Bootcamp, and after attending a few seminars, my road with
+                  Javascript began.
+                </p>
+
+                <p
+                  className={"info text-left"}
+                  style={{
+                    fontSize: "25px",
+                  }}
+                ></p>
+              </div>
+              <div className="col-sm-6">
+                <img
+                  src={perch}
+                  className="img-fluid jumboImage"
+                  alt="Responsive image"
+                />
+              </div>
             </div>
             <br></br>
-            <div className={"container bottomText"}>
-            <p
-                className={"info text-left"}
-                style={{
-                  fontSize: "3vh",
-                }}
-              >
-                I'm a lover of video games, documentaries, astronomy and music.
-                On my free time you'll most likely find me on Twitch, writing
-                music or deep in a moshpit at some local show. I have an
-                insatiable appetite for learning, and that's what eventually
-                lead me to try my hand at Tech.
-              </p>
-            </div>
           </div>
-        </div>
 
-        <div
-          className={"questionContainer jumbotron jumbotron-fluid text-center"}
-        >
-          <h2 className={"question jumboTextTitle"}>How did I get here?</h2>
-          <br></br>
-          <div className="row">
-            <div className="col-sm-6 jumboInfo">
-              <p
-                className={"info text-left"}
-                style={{
-                  fontSize: "3vh",
-                }}
-              >
-                Growing up I had a few friends that would tell me about coding,
-                but it seemed like a niche interest at the time than a career
-                path.
-              </p>
-
-              <p
-                className={"info text-left"}
-                style={{
-                  fontSize: "3vh",
-                }}
-              >
-                However, during my time at John Jay, I started to feel lost, and
-                I found myself at wits end about where I would end up. My
-                girlfriend, who at the time was beginning her time at a Program
-                called Pursuit, invited me to come to one of their welcoming
-                seminars.
-              </p>
+          <div
+            className={
+              "questionContainer jumbotron jumbotron-fluid text-center"
+            }
+          >
+            <h2 className={"question jumboTextTitle"}>Why Coding?</h2>
+            <br></br>
+            <div className="row">
+              <div className="col-sm-6">
+                <img
+                  src={bwMarvin}
+                  className="img-fluid jumboImage"
+                  alt="Responsive image"
+                />
+              </div>
+              <div className="col-sm-6 jumboInfo">
+                <p
+                  className={"info text-left"}
+                  style={{
+                    fontSize: "3vh",
+                  }}
+                >
+                  I've met some of the nicest people ever in my short time as a
+                  developer. These people have been there for me when I thought
+                  that I couldn't do it. It's because of them that I continue to
+                  push myself. As a creator, the pride I feel after learning
+                  about something and then using that information to create
+                  something of my own is unmatched.
+                </p>
+              </div>
             </div>
-            <div className="col-sm-6">
-              <img
-                src={Purple}
-                className="img-fluid jumboImage"
-                alt="Responsive image"
-              />
-            </div>
+            <br></br>
+           
+            <button
+              type="button"
+              className="btn btn-primary projectsButton"
+              onClick={() => navigate("/projects")}
+            >
+              Projects
+            </button>
           </div>
-          <br></br>
-          <div className={"container bottomText"}>
-          <p
-                className={"info text-left"}
-                style={{
-                  fontSize: "3vh",
-                }}
-              >
-                There, I ended up learning about the program, meeting developers
-                in training, and falling in love with the place. The tech
-                environment felt incredibly refreshing. People from all walks of
-                life ventured to this field to make something of themselves -
-                People with stories that echoed my own. After a lot of
-                encouragement from my new friends, I decided that I needed to be
-                here. Before long, I fell in love with coding, and I want to do
-                this for the rest of my life.
-              </p>
-          </div>
-        </div>
-
-        <div
-          className={"questionContainer jumbotron jumbotron-fluid text-center"}
-        >
-          <h2 className={"question jumboTextTitle"}>Why Coding?</h2>
-          <br></br>
-          <div className="row">
-            <div className="col-sm-6">
-              <img
-                src={Berkshire}
-                className="img-fluid jumboImage"
-                alt="Responsive image"
-              />
-            </div>
-            <div className="col-sm-6 jumboInfo">
-              <p
-                className={"info text-left"}
-                style={{
-                  fontSize: "3vh",
-                }}
-              >
-                I've met some of the nicest people ever in my short time as a
-                developer. These people have been there for me when I thought
-                that I couldn't do it. It's because of them that I continue to
-                push myself. As a creator, the pride I feel after learning about
-                something and then using that information to create something of
-                my own is unmatched.
-              </p>
-            </div>
-          </div>
-          <br></br>
-          <div className={"container bottomText"}>
-          <p
-                className={"info text-left"}
-                style={{
-                  fontSize: "3vh",
-                }}
-              >
-                I get so happy after solving problems that I didn't know how to
-                before, or being introduced to new concepts or tricks. Coding is
-                always evolving. There is always a new challenge to face, or a
-                new thing to learn, or a new way to express yourself with it.
-              </p>
-
-              <p
-                className={"info text-left"}
-                style={{
-                  fontSize: "3vh",
-                }}
-              >
-                I want to push myself and help create products that can help
-                others out, and learn more about myself in the process.
-              </p>
-          </div>
-          <button
-                type="button"
-                className="btn btn-primary projectsButton"
-                onClick={() => history.push("/projects")}
-              >
-                Projects
-              </button>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

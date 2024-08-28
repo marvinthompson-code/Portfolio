@@ -2,15 +2,18 @@ import React, { useEffect } from "react";
 import "../../css/Project.css";
 import noThanks from "../../Photos/ntcscreenshot.png";
 import faceSpace from "../../Photos/facespacethumb2.jpg";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import roadie from "../../Photos/Screen Shot 2020-09-19 at 2.48.37 PM.png";
+import Nav from "../Nav";
 
 const Project = () => {
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
-  const history = useHistory();
+  const navigate = useNavigate();
   return (
+    <>
+   
     <div className="projects">
       <div className="container">
         <div className="jumbotron jumbotron-fluid text-center bigJumbo">
@@ -28,7 +31,7 @@ const Project = () => {
             <button
               type="button"
               className="btn btn-primary aboutButton"
-              onClick={() => history.push("/skills")}
+              onClick={() => navigate("/skills")}
             >
               Skills
             </button>
@@ -148,6 +151,7 @@ const Project = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

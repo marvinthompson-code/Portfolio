@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import "../../css/Splash.css";
 import FadeIn from "react-fade-in";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import note from "../../Photos/musical-note.png";
 
 const Splash = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
@@ -28,7 +28,7 @@ const Splash = () => {
           <button
             type={"button"}
             className={"enter btn btn-primary"}
-            onClick={() => history.push("/home")}
+            onClick={() => navigate("/home")}
           >
             <img src={note} alt="enter" className="icon" />
           </button>

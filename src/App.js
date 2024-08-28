@@ -3,7 +3,7 @@ import "bootstrap/dist/js/bootstrap.bundle";
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Nav from "../src/components/Nav";
 import Home from "../src/components/Home/Home";
 import Project from "../src/components/Projects/Project";
@@ -17,36 +17,20 @@ import Contact from "./components/Contact/Contact";
 function App() {
   return (
     <div className="App">
-      <Switch>
-        <Route exact path={"/"}>
-          <Splash />
-        </Route>
+      <Nav />
+      <Routes>
+        <Route exact path={"/"} element={<Splash />} />
 
-        <Route exact path={"/home"}>
-          <Nav />
-          <Home />
-        </Route>
+        <Route exact path={"/home"} element={<Home />} />
 
-        <Route exact path={"/contact"}>
-          <Nav />
-          <Contact />
-        </Route>
+        <Route exact path={"/contact"} element={<Contact />} />
 
-        <Route path={"/about"}>
-          <Nav />
-          <About />
-        </Route>
+        <Route path={"/about"} element={<About />} />
 
-        <Route path={"/projects"}>
-          <Nav />
-          <Project />
-        </Route>
+        <Route path={"/projects"} element={<Project />} />
 
-        <Route path={"/skills"}>
-          <Nav />
-          <Skills />
-        </Route>
-      </Switch>
+        <Route path={"/skills"} element={<Skills />} />
+      </Routes>
     </div>
   );
 }

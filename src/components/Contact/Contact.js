@@ -1,9 +1,10 @@
 import React from "react";
 import emailjs from "emailjs-com";
 import "../../css/Contact.css";
-import { USER_ID } from "../../secrets";
+import Nav from "../Nav";
 
 const Contact = () => {
+  const { USER_ID } = process.env
   function sendEmail(e) {
     e.preventDefault();
 
@@ -18,6 +19,8 @@ const Contact = () => {
     e.target.reset();
   }
   return (
+    <>
+   
     <div className="contactDiv">
       <div className="container">
         <div className="jumbotron jumbotron-fluid text-center bigJumbo">
@@ -66,6 +69,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

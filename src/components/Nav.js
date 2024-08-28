@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/Nav.css";
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -26,8 +26,12 @@ const Nav = () => {
       </button>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav">
-          <NavLink exact to="/home" className="nav-item nav-link active navItem">
-            Home <span className="sr-only">(current)</span>
+          <NavLink
+            exact
+            to="/home"
+            className="nav-item nav-link active navItem"
+          >
+            Home
           </NavLink>
           <NavLink exact to="/about" className="nav-item nav-link navItem">
             About
