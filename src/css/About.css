@@ -122,3 +122,9 @@
   font-size: xx-large;
   color: white;
 }
+
+.downloadText:hover {
+  cursor: pointer;
+  color: red !important;
+  transition: 1s;
+}

@@ -39,7 +39,7 @@ const Project = () => {
             </div>
           </div>
 
-          <div className="card-deck  justify-content-md-center ">
+          <div className="card-deck  justify-content-md-center " >
             <div className="card text-center slideCard">
               <img
                 className="card-img-top d-block img-fluid img-responsive cardImage"

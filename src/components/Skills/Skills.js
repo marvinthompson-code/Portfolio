@@ -4,6 +4,26 @@ import marvinPdf from "../../Photos/pdfsnippet.PNG";
 
 const Skills = () => {
   const navigate = useNavigate();
+
+  const onClick = () => {
+    fetch("../../files/mtpdf.pdf").then((blob) => {
+      const fileURL = window.URL.createObjectURL(blob);
+
+      let alink = document.createElement("a");
+      alink.href = fileURL;
+      alink.download = "mtpdf.pdf";
+      alink.click();
+    });
+
+    // const pdfUrl = "mtpdf.pdf"
+    // const link = document.createElement("a")
+    // link.href = pdfUrl
+    // link.download = "mtpdf.pdf"
+    // document.body.appendChild(link)
+    // link.click()
+    // document.body.removeChild(link)
+  };
+
   return (
     <>
       <div>
@@ -180,7 +200,14 @@ const Skills = () => {
                     }}
                   />
 
-                  <p className="lead jumboText">Download Resume</p>
+                  <a
+                    href={marvinPdf}
+                    download="Marvin Thompson Resume"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <p className="downloadText jumboText">Download Resume</p>
+                  </a>
                 </div>
               </div>
             </div>

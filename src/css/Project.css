@@ -92,6 +92,7 @@
 .slideCard {
   border: 5px solid var(--richBlk);
   border-radius: 10px;
+  margin-top: 2px;
 }
 
 .card {
