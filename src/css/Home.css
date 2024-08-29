@@ -87,6 +87,7 @@
   background-size: 100% auto;
   background-position: center bottom;
   background-repeat: no-repeat;
+  padding: 15px;
   height: auto;
 }
 
@@ -113,6 +114,7 @@
   text-align: left;
   text-shadow: 2px 2px 8px var(--eerieBlk2);
   font-family: libreRegular;
+  padding: 5px;
 }
 .jumboText {
   color: white !important;
@@ -120,9 +122,10 @@
   font-family: libreRegular;
 }
 
+
 .jumboTextTitle {
-  color: white !important;
-  text-shadow: 2px 2px 8px var(--eerieBlk2);
+  color: white ;
+  text-shadow: 3px 3px 10px var(--eerieBlk2);
   font-family: GrenzeGotisch;
 }
 

@@ -5,14 +5,17 @@ import { NavLink } from "react-router-dom";
 const Nav = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top navBar">
+      <div className="container-fluid">
+
+     
       <NavLink exact to="/" className="navbar-brand  brand">
         MT
       </NavLink>
       <button
-        className="navbar-toggler "
+        className="navbar-toggler"
         type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup"
         aria-expanded="false"
         aria-label="Toggle navigation"
@@ -61,6 +64,8 @@ const Nav = () => {
             linkedIn
           </a>
         </div>
+      </div>
+
       </div>
     </nav>
   );

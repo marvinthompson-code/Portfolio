@@ -23,6 +23,7 @@ const About = () => {
           >
             <h2 className={"question jumboTextTitle "}>Who am I?</h2>
             <br></br>
+
             <div className="row">
               <div className="col-sm-6">
                 <img
@@ -45,6 +46,7 @@ const About = () => {
                   some Street Fighter!
                 </p>
               </div>
+              
               <br></br>
               <br></br>
             </div>

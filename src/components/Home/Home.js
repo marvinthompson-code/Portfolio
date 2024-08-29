@@ -5,14 +5,14 @@ import Contact from "../Contact/Contact";
 import "react-awesome-slider/dist/custom-animations/cube-animation.css";
 import "../../css/Home.css";
 import lawrence from "../../Photos/39926998_2266028230093303_5751449542830587904_o.jpg";
-import marissa from "../../Photos/ANAHATA (FB, IG)-71.jpg";
-import Nav from "../Nav";
+import bw2 from "../../Photos/bw2.jpg";
+import green from "../../Photos/promo-54.jpg";
+import knitting from "../../Photos/knittingResize.jpg";
 
 const Home = () => {
   const navigate = useNavigate();
   return (
     <>
-      
       <div className="home container">
         <div className="jumbotron jumbotron-fluid text-center welcomeJumbo">
           <div className="container">
@@ -24,24 +24,29 @@ const Home = () => {
         </div>
 
         <div className="row wrapper">
-          <div className="col-sm-6 carouselColumn">
+          <div
+            className="col-sm-6 carouselColumn"
+            style={{
+              margin: "10x",
+            }}
+          >
             <div
               id="carouselExampleControls"
               className="carousel slide homeCarousel"
-              data-ride="carousel"
+              data-bs-ride="carousel"
             >
               <div className="carousel-inner">
                 <div className="carousel-item active">
                   <img
                     className="d-block w-100 carouselImage img-fluid"
-                    src={marissa}
+                    src={bw2}
                     alt="First slide"
                   />
                 </div>
                 <div className="carousel-item">
                   <img
                     className="d-block w-100 carouselImage img-fluid"
-                    src={Andrew}
+                    src={green}
                     alt="Second slide"
                   />
                 </div>
@@ -52,31 +57,43 @@ const Home = () => {
                     alt="Third slide"
                   />
                 </div>
+
+                <div className="carousel-item">
+                  <img
+                    className="d-block w-100 carouselImage img-fluid"
+                    src={knitting}
+                    alt="Fourth slide"
+                  />
+                </div>
               </div>
-              <a
+
+              <button
                 className="carousel-control-prev"
                 href="#carouselExampleControls"
-                role="button"
-                data-slide="prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
               >
                 <span
                   className="carousel-control-prev-icon"
                   aria-hidden="true"
                 ></span>
-                <span className="sr-only">Previous</span>
-              </a>
-              <a
+                <span className="visually-hidden">Previous</span>
+              </button>
+
+              <button
                 className="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
                 href="#carouselExampleControls"
-                role="button"
-                data-slide="next"
+                data-bs-slide="next"
               >
                 <span
                   className="carousel-control-next-icon"
                   aria-hidden="true"
                 ></span>
-                <span className="sr-only">Next</span>
-              </a>
+                <span className="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
 
@@ -86,7 +103,7 @@ const Home = () => {
                 Welcome
               </h1>
               <p
-                className="lead jumboText jumboBodyText"
+                className="lead jumboText jumboBodyText text-center"
                 style={{
                   fontSize: "25px",
                 }}
@@ -94,20 +111,21 @@ const Home = () => {
                 Welcome to my Portfolio Site!
               </p>
               <p
-                className="lead jumboText jumboBodyText"
+                className="lead jumboText jumboBodyText text-center"
                 style={{
                   fontSize: "20px",
-                  paddingBottom: "5px"
+                  paddingBottom: "5px",
                 }}
               >
-                <span>This webpage is meant to provide some insight about myself, as
-                well as the Project's I've worked on while continuing my career
-                as a Full-Stack Web Developer.</span>
+                <span>
+                  This webpage is meant to provide some insight about myself, as
+                  well as the Project's I've worked on while continuing my
+                  career as a Full-Stack Web Developer.
+                </span>
               </p>
-             
-              <hr className="my-4" />
+
               <p
-                className="jumboText jumboBodyText"
+                className="jumboText jumboBodyText text-center"
                 style={{
                   fontSize: "20px",
                 }}
@@ -122,13 +140,22 @@ const Home = () => {
                 type="button"
                 className="btn btn-primary aboutButton"
                 onClick={() => navigate("/about")}
+                style={{
+                  margin: "10px",
+                }}
               >
                 About
               </button>
             </div>
           </div>
         </div>
-        <Contact />
+        <div
+          style={{
+            padding: "15px",
+          }}
+        >
+          <Contact />
+        </div>
       </div>
     </>
   );

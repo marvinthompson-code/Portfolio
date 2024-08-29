@@ -42,12 +42,13 @@
     color: white !important;
     font-family: GrenzeGotisch;
     font-size: x-large;
+    padding: 10px;
 }
 
 
 .nav-item {
     padding: 5px 10px;
-    margin: 2px 3px;
+    margin: 3px 3px;
   }
 
   .navBar {

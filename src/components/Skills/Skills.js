@@ -10,12 +10,19 @@ import expressJs from "../../Photos/expressJsLogo.png";
 import django from "../../Photos/django-logo-negative.png";
 import firebaseLogo from "../../Photos/firebaselogo.png";
 
+import marvinPdf from "../../Photos/pdfsnippet.PNG";
+
 const Skills = () => {
   const navigate = useNavigate();
   return (
     <>
       <div>
-        <div className="container">
+        <div
+          className="container"
+          style={{
+            padding: "10px",
+          }}
+        >
           <div className="jumbotron jumbotron-fluid text-center bigJumbo">
             <div className="container">
               <h1 className="display-4 jumboTextTitle">Skills</h1>
@@ -23,58 +30,178 @@ const Skills = () => {
                 Here are some of the things I've learned during my time as a
                 developer.
               </p>
+
               <div className={"row"}>
-                <p className="lead jumboText text-center">
-                  Languages: Javascript
-                </p>
-              </div>
-              <div className={"row"}>
-                <div>
-                  <div className="skillContainer container">
-                    <div className="skillImageContainer">
-                      <img src={ReactLogo} alt={"react"} className={"skill"} />
-                    </div>
-                    <div className="skillImageContainer">
-                      <img src={NodeLogo} alt={"node"} className={"skill"} />
-                    </div>
-                    <div className="skillImageContainer">
-                      <img src={ReduxLogo} alt={"redux"} className={"skill"} />
-                    </div>
-                    <div className="skillImageContainer">
-                      <img src={django} alt={"django"} className={"skill"} />
-                    </div>
-                    <div className="skillImageContainer">
-                      <img src={firebaseLogo} className={"skill"} />
-                    </div>
-                    <div className="skillImageContainer">
-                      <img
-                        src={PostGresLogo}
-                        alt={"PostGresql"}
-                        className={"skill"}
-                      />
-                    </div>
-                    <div className="skillImageContainer">
-                      <img src={GitLogo} alt={"Github"} className={"skill"} />
-                    </div>
-                    <div className="skillImageContainer">
-                      <img src={HCJ} alt={"hcj"} className={"skill"} />
-                    </div>
-                    <div className="skillImageContainer">
-                      <img
-                        src={expressJs}
-                        alt={"express logo"}
-                        className={"skill"}
-                      />
-                    </div>
-                  </div>
+                <div className="col-sm-6">
+                  <p className="lead jumboText text-left">Languages:</p>
                 </div>
-                <div className="col"></div>
+
+                <div className="col-sm-6">
+                  <ul>
+                    <li
+                      className="jumboText"
+                      style={{
+                        listStyleType: "none",
+                      }}
+                    >
+                      Javascript
+                    </li>
+                    <li
+                      className="jumboText"
+                      style={{
+                        listStyleType: "none",
+                      }}
+                    >
+                      Python
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className={"row"}>
+                <div className="col-sm-6">
+                  <p className="lead jumboText text-left">Front-End:</p>
+                </div>
+
+                <div className="col-sm-6">
+                  <ul>
+                    <li
+                      className="jumboText"
+                      style={{
+                        listStyleType: "none",
+                      }}
+                    >
+                      HTML/CSS
+                    </li>
+                    <li
+                      className="jumboText"
+                      style={{
+                        listStyleType: "none",
+                      }}
+                    >
+                      React
+                    </li>
+                    <li
+                      className="jumboText"
+                      style={{
+                        listStyleType: "none",
+                      }}
+                    >
+                      Node.js
+                    </li>
+                    <li
+                      className="jumboText"
+                      style={{
+                        listStyleType: "none",
+                      }}
+                    >
+                      Redux/Redux Toolkit
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className={"row"}>
+                <div className="col-sm-6">
+                  <p className="lead jumboText text-left">Back-End:</p>
+                </div>
+                <div className="col-sm-6">
+                  <ul>
+                    <li
+                      className="jumboText"
+                      style={{
+                        listStyleType: "none",
+                      }}
+                    >
+                      Express.js
+                    </li>
+                    <li
+                      className="jumboText"
+                      style={{
+                        listStyleType: "none",
+                      }}
+                    >
+                      MySQL
+                    </li>
+                    <li
+                      className="jumboText"
+                      style={{
+                        listStyleType: "none",
+                      }}
+                    >
+                      PostGreSQL
+                    </li>
+                    <li
+                      className="jumboText"
+                      style={{
+                        listStyleType: "none",
+                      }}
+                    >
+                      API development
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="col-sm-6">
+                  <p className="lead jumboText text-left">Testing:</p>
+                </div>
+                <div className="col-sm-6">
+                  <ul>
+                    <li
+                      className={"jumboText"}
+                      style={{
+                        listStyleType: "none",
+                      }}
+                    >
+                      Cypress
+                    </li>
+                    <li
+                      className={"jumboText"}
+                      style={{
+                        listStyleType: "none",
+                      }}
+                    >
+                      Jest
+                    </li>
+                    <li
+                      className={"jumboText"}
+                      style={{
+                        listStyleType: "none",
+                      }}
+                    >
+                      Manual Testing
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
+
+            <div className="container">
+              <div className="row">
+                <div>
+                  <img
+                    src={marvinPdf}
+                    alt="Marvin's resume"
+                    width={"40%"}
+                    style={{
+                      padding: "10px",
+                    }}
+                  />
+
+                  <p className="lead jumboText">Download Resume</p>
+                </div>
+              </div>
+            </div>
+
             <button
               type="button"
               className="btn btn-primary aboutButton"
               onClick={() => navigate("/contact")}
+              style={{
+                margin: "10px",
+              }}
             >
               Contact
             </button>
