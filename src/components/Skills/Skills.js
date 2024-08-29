@@ -1,15 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import ReactLogo from "../../Photos/React.png";
-import NodeLogo from "../../Photos/Node.png";
-import ReduxLogo from "../../Photos/Redux.png";
-import PostGresLogo from "../../Photos/postgresql.png";
-import GitLogo from "../../Photos/Git-Logo-White.png";
-import HCJ from "../../Photos/HtmlCssJs.png";
-import expressJs from "../../Photos/expressJsLogo.png";
-import django from "../../Photos/django-logo-negative.png";
-import firebaseLogo from "../../Photos/firebaselogo.png";
-
 import marvinPdf from "../../Photos/pdfsnippet.PNG";
 
 const Skills = () => {
